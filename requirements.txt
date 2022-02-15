@@ -1,0 +1,6 @@
+Django~=2.2.4
+djangorestframework==3.12.4
+docutils==0.18.1
+lockfile==0.12.2
+pytz==2021.3
+sqlparse==0.4.2

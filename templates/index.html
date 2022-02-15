@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %} Последние обновления {% endblock %}
+
+{% block content %}
+    <h5>min/max/avg всех записей в БД - {{ cpu_all_min }}/{{ cpu_all_max }}/{{ cpu_all_avg }} </h5>
+    <h5>min/max/avg 100 последних записей - {{ cpu_list_min }}/{{ cpu_list_max }}/{{ cpu_list_avg }} </h5>
+    <table class="table table-bordered table-hover table-inverse table-striped sortable" id="example" width=100%>
+        <h5 class="font-weight-bold">Последние 100 записей</h5>
+      <thead>
+       <tr>
+          <th scope="col">№</th>
+          <th scope="col">Загрузка</th>
+          <th scope="col">Дата</th>
+        </tr>
+      </thead>
+      <tbody>
+       {% for cpu_item in cpu_list %}
+        <tr>
+          <th scope="row">{{ cpu_item.id }}</th>
+          <td>{{ cpu_item.load }}%</td>
+          <td>
+              {{ cpu_item.date | date:"Y-m-d H:i:s"}}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+
+
+
+
+
+{% endblock %} 
