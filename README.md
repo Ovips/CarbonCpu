@@ -15,7 +15,7 @@ python3 -m pip install --upgrade pip
 ```
 + Провести установку пакета
 ```
-pip3 install -i https://test.pypi.org/simple/ CarbonCpu==0.3
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple CarbonCpu==0.6
 ```
 + После установки перейти в директорию с установленным пакетом
 ```
