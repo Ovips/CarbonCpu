@@ -15,7 +15,7 @@ python3 -m pip install --upgrade pip
 ```
 + Провести установку пакета
 ```
-pip install -i https://test.pypi.org/simple/ CarbonCpu==0.1
+pip3 install -i https://test.pypi.org/simple/ CarbonCpu==0.3
 ```
 + После установки перейти в директорию с установленным пакетом
 ```
@@ -23,7 +23,11 @@ cd ./venv/lib/python3.6/site-packages/CarbonCpu/
 ```
 + Установить зависимости
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
+```
++ Установить requests в python2
+ ```
+pip2 install requests
 ```
 ### Управление демоном - клиентом
 ***Запуск*** в директории с установленным пакетом выполнить
@@ -39,5 +43,5 @@ python2.7 client_cpu.py stop
 ### Запуск сервера
 В директории с установленным пакетом выполнить
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
