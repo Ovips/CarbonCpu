@@ -45,3 +45,7 @@ python2.7 client_cpu.py stop
 ```
 python3 manage.py runserver
 ```
+Сервер будет запущен по адресу
+```
+http://127.0.0.1:8000/
+```
